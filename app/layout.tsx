@@ -24,9 +24,9 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Arya Ramadhani | Full-Stack Developer & Software Engineer",
+  title: "Arya Ramadhani | Software Engineer",
   description:
-    "Portfolio of Arya Ramadhani — Software Engineer & Full-Stack Developer specializing in Web & Mobile Development, IoT, Computer Vision, and UI/UX Design.",
+    "Portfolio of Arya Ramadhani — Software Engineer specializing in Web & Mobile Development, IoT, Computer Vision, and UI/UX Design.",
   keywords: [
     "Full-Stack Developer",
     "Software Engineer",
@@ -43,16 +43,16 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    title: "Arya Ramadhani | Full-Stack Developer & Software Engineer",
+    title: "Arya Ramadhani | Full-Stack Developer",
     description:
-      "Portfolio of Arya Ramadhani — Software Engineer & Full-Stack Developer specializing in Web & Mobile Development, IoT, AI & Computer Vision, and UI/UX Design.",
+      "Portfolio of Arya Ramadhani — Software Engineer specializing in Web & Mobile Development, IoT, AI & Computer Vision, and UI/UX Design.",
     siteName: "Arya Ramadhani Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Arya Ramadhani | Full-Stack Developer & Software Engineer",
+    title: "Arya Ramadhani | Full-Stack Developer",
     description:
-      "Portfolio of Arya Ramadhani — Software Engineer & Full-Stack Developer specializing in Web & Mobile Development, IoT, AI & Computer Vision, and UI/UX Design.",
+      "Portfolio of Arya Ramadhani — Software Engineer specializing in Web & Mobile Development, IoT, AI & Computer Vision, and UI/UX Design.",
   },
   robots: {
     index: true,
