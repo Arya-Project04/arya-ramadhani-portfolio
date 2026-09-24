@@ -28,12 +28,12 @@ const footerLinks = [
   {
     icon: LinkedInIcon,
     label: "LinkedIn",
-    href: "https://linkedin.com/in/arya-ramadhani",
+    href: "https://linkedin.com/in/arya-ramadhani-id",
   },
   {
     icon: Mail,
     label: "Email",
-    href: "mailto:aryaramadhani.dev@gmail.com",
+    href: "mailto:okearya.tube@gmail.com",
   },
 ];
 
@@ -56,14 +56,14 @@ export default function Footer() {
                 <Terminal className="w-3.5 h-3.5" />
               </div>
               <span className="font-mono text-base font-bold text-text tracking-tight">
-                ARYA<span className="text-accent">.DEV</span>
+                ARYA<span className="text-accent"> RAMADHANI</span>
               </span>
             </div>
             <p className="text-xs font-mono text-text-secondary">
-              Full-Stack Developer • IoT &amp; AI Vision • Software Engineer
+              Web & Mobile Development | IoT | AI & Computer Vision | UI/UX Design
             </p>
             <p className="text-[11px] text-text-muted">
-              © 2026 Arya Ramadhani. Crafted with Next.js 16, TypeScript &amp; Framer Motion.
+              © 2026 Arya Ramadhani.
             </p>
           </div>
 

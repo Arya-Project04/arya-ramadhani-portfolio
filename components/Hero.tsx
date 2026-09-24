@@ -8,10 +8,7 @@ import ParticleField from "./ParticleField";
 import HeroAvatar from "./HeroAvatar";
 
 const roles = [
-  "Full Stack Developer",
-  "Software Engineer",
-  "IoT Developer",
-  "AI & Computer Vision Enthusiast",
+  "Software Engineer"
 ];
 
 const decorativeCodeFragments = [
@@ -56,11 +53,64 @@ export default function Hero() {
       {/* Background Interactive Particle Field */}
       <ParticleField />
 
-      {/* Giant Subtle Backdrop Typography (matching reference style) */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden opacity-[0.04] dark:opacity-[0.06] z-0">
-        <span className="text-[15vw] font-black font-mono tracking-tighter text-text whitespace-nowrap">
-          SOFTWARE ENGINEER
-        </span>
+      {/* Scrolling Backdrop Typography — 4 rows, mid-to-bottom, alternating directions */}
+      <div className="absolute inset-0 pointer-events-none select-none overflow-hidden opacity-[0.04] dark:opacity-[0.06] z-0 flex flex-col justify-end gap-2 pb-[4vh]" style={{ paddingTop: '45%' }}>
+        {/* Row 1 — scrolls left */}
+        <div className="marquee-row">
+          <div className="marquee-track marquee-left">
+            <span className="text-[8vw] font-black font-mono tracking-tighter text-text whitespace-nowrap px-6">
+              PORTOFOLIO
+            </span>
+            <span className="text-[8vw] font-black font-mono tracking-tighter text-text whitespace-nowrap px-6" aria-hidden="true">
+              PORTOFOLIO
+            </span>
+            <span className="text-[8vw] font-black font-mono tracking-tighter text-text whitespace-nowrap px-6" aria-hidden="true">
+              PORTOFOLIO
+            </span>
+          </div>
+        </div>
+        {/* Row 2 — scrolls right */}
+        <div className="marquee-row">
+          <div className="marquee-track marquee-right">
+            <span className="text-[8vw] font-black font-mono tracking-tighter text-text whitespace-nowrap px-6">
+              PORTOFOLIO
+            </span>
+            <span className="text-[8vw] font-black font-mono tracking-tighter text-text whitespace-nowrap px-6" aria-hidden="true">
+              PORTOFOLIO
+            </span>
+            <span className="text-[8vw] font-black font-mono tracking-tighter text-text whitespace-nowrap px-6" aria-hidden="true">
+              PORTOFOLIO
+            </span>
+          </div>
+        </div>
+        {/* Row 3 — scrolls left */}
+        <div className="marquee-row">
+          <div className="marquee-track marquee-left">
+            <span className="text-[8vw] font-black font-mono tracking-tighter text-text whitespace-nowrap px-6">
+              PORTOFOLIO
+            </span>
+            <span className="text-[8vw] font-black font-mono tracking-tighter text-text whitespace-nowrap px-6" aria-hidden="true">
+              PORTOFOLIO
+            </span>
+            <span className="text-[8vw] font-black font-mono tracking-tighter text-text whitespace-nowrap px-6" aria-hidden="true">
+              PORTOFOLIO
+            </span>
+          </div>
+        </div>
+        {/* Row 4 — scrolls right */}
+        <div className="marquee-row">
+          <div className="marquee-track marquee-right">
+            <span className="text-[8vw] font-black font-mono tracking-tighter text-text whitespace-nowrap px-6">
+              PORTOFOLIO
+            </span>
+            <span className="text-[8vw] font-black font-mono tracking-tighter text-text whitespace-nowrap px-6" aria-hidden="true">
+              PORTOFOLIO
+            </span>
+            <span className="text-[8vw] font-black font-mono tracking-tighter text-text whitespace-nowrap px-6" aria-hidden="true">
+              PORTOFOLIO
+            </span>
+          </div>
+        </div>
       </div>
 
       {/* Futuristic Ambient Gradient Meshes */}
@@ -138,8 +188,7 @@ export default function Hero() {
               variants={itemVariants}
               className="text-base sm:text-lg text-text-secondary max-w-xl leading-relaxed font-normal"
             >
-              Building scalable digital solutions through full-stack software development,
-              intelligent computer vision systems, and automated IoT hardware architectures.
+              Building scalable digital solutions that turn ideas into meaningful, reliable, and impactful experiences.
             </motion.p>
 
             {/* Highlight Skill Bar */}

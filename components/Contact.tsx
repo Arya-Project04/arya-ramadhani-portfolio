@@ -27,16 +27,16 @@ const socials = [
     icon: Mail,
     customIcon: null as null | typeof GitHubIcon,
     label: "Direct Email",
-    value: "aryaramadhani.dev@gmail.com",
-    href: "mailto:aryaramadhani.dev@gmail.com",
+    value: "okearya.tube@gmail.com",
+    href: "mailto:okearya.tube@gmail.com",
     subtext: "Fastest response within 24h",
   },
   {
     icon: null,
     customIcon: LinkedInIcon,
     label: "LinkedIn Professional",
-    value: "linkedin.com/in/arya-ramadhani",
-    href: "https://linkedin.com/in/arya-ramadhani",
+    value: "linkedin.com/in/arya-ramadhani-id",
+    href: "https://linkedin.com/in/arya-ramadhani-id",
     subtext: "Career, network & recommendations",
   },
   {
@@ -224,7 +224,7 @@ export default function Contact() {
               {/* Status Note */}
               <div className="p-4 rounded-xl border border-emerald-500/20 bg-emerald-500/5 text-xs text-text-secondary flex items-center gap-2.5">
                 <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse flex-shrink-0" />
-                <span>Currently open for Software Engineer, Full-Stack Developer, and IoT/AI roles.</span>
+                <span>I am currently open to internships, freelance work, collaborative projects, and opportunities for professional growth in the fields of software engineering and technology.</span>
               </div>
             </div>
           </SectionReveal>

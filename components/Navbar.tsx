@@ -72,7 +72,7 @@ export default function Navbar() {
             <Terminal className="w-4 h-4" />
           </div>
           <span>
-            ARYA<span className="text-accent font-extrabold">.IT</span>
+            ARYA<span className="text-accent font-extrabold"> RAMADHANI</span>
           </span>
         </a>
 
