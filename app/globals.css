@@ -176,11 +176,11 @@ body {
 /* ── Marquee Scrolling Backdrop ── */
 @keyframes marquee-left {
   0%   { transform: translateX(0); }
-  100% { transform: translateX(-33.333%); }
+  100% { transform: translateX(-50%); }
 }
 
 @keyframes marquee-right {
-  0%   { transform: translateX(-33.333%); }
+  0%   { transform: translateX(-50%); }
   100% { transform: translateX(0); }
 }
 
@@ -196,11 +196,44 @@ body {
 }
 
 .marquee-left {
-  animation: marquee-left 25s linear infinite;
+  animation: marquee-left 30s linear infinite;
 }
 
 .marquee-right {
-  animation: marquee-right 25s linear infinite;
+  animation: marquee-right 30s linear infinite;
+}
+
+.marquee-text {
+  font-family: var(--font-mono);
+  font-weight: 900;
+  font-size: clamp(3.2rem, 7.5vw, 6.5rem);
+  letter-spacing: -0.03em;
+  white-space: nowrap;
+  padding: 0 1.5rem;
+  line-height: 1;
+  user-select: none;
+}
+
+.marquee-text-stroke {
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--color-text);
+  opacity: 0.08;
+  transition: opacity 0.3s ease;
+}
+
+.dark .marquee-text-stroke {
+  -webkit-text-stroke: 1.5px var(--color-text);
+  opacity: 0.12;
+}
+
+.marquee-text-fill {
+  color: var(--color-text);
+  opacity: 0.055;
+  transition: opacity 0.3s ease;
+}
+
+.dark .marquee-text-fill {
+  opacity: 0.08;
 }
 
 @media (prefers-reduced-motion: reduce) {

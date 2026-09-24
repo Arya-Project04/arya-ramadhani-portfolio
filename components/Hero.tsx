@@ -37,6 +37,8 @@ const itemVariants: Variants = {
   },
 };
 
+const backdropWords = ["PORTOFOLIO", "PORTOFOLIO", "PORTOFOLIO", "PORTOFOLIO"];
+
 export default function Hero() {
   const scrollToSection = (id: string) => {
     const el = document.querySelector(id);
@@ -53,62 +55,85 @@ export default function Hero() {
       {/* Background Interactive Particle Field */}
       <ParticleField />
 
-      {/* Scrolling Backdrop Typography — 4 rows, mid-to-bottom, alternating directions */}
-      <div className="absolute inset-0 pointer-events-none select-none overflow-hidden opacity-[0.04] dark:opacity-[0.06] z-0 flex flex-col justify-end gap-2 pb-[4vh]" style={{ paddingTop: '45%' }}>
-        {/* Row 1 — scrolls left */}
+      {/* Scrolling Backdrop Typography — 4 rows, alternating directions */}
+      <div className="absolute inset-0 pointer-events-none select-none overflow-hidden z-0 flex flex-col justify-around py-6 sm:py-10">
+        {/* Row 1 — scrolls left (stroke) */}
         <div className="marquee-row">
           <div className="marquee-track marquee-left">
-            <span className="text-[8vw] font-black font-mono tracking-tighter text-text whitespace-nowrap px-6">
-              PORTOFOLIO
-            </span>
-            <span className="text-[8vw] font-black font-mono tracking-tighter text-text whitespace-nowrap px-6" aria-hidden="true">
-              PORTOFOLIO
-            </span>
-            <span className="text-[8vw] font-black font-mono tracking-tighter text-text whitespace-nowrap px-6" aria-hidden="true">
-              PORTOFOLIO
-            </span>
+            <div className="flex">
+              {backdropWords.map((word, i) => (
+                <span key={`r1-a-${i}`} className="marquee-text marquee-text-stroke">
+                  {word}
+                </span>
+              ))}
+            </div>
+            <div className="flex" aria-hidden="true">
+              {backdropWords.map((word, i) => (
+                <span key={`r1-b-${i}`} className="marquee-text marquee-text-stroke">
+                  {word}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
-        {/* Row 2 — scrolls right */}
+
+        {/* Row 2 — scrolls right (fill) */}
         <div className="marquee-row">
           <div className="marquee-track marquee-right">
-            <span className="text-[8vw] font-black font-mono tracking-tighter text-text whitespace-nowrap px-6">
-              PORTOFOLIO
-            </span>
-            <span className="text-[8vw] font-black font-mono tracking-tighter text-text whitespace-nowrap px-6" aria-hidden="true">
-              PORTOFOLIO
-            </span>
-            <span className="text-[8vw] font-black font-mono tracking-tighter text-text whitespace-nowrap px-6" aria-hidden="true">
-              PORTOFOLIO
-            </span>
+            <div className="flex">
+              {backdropWords.map((word, i) => (
+                <span key={`r2-a-${i}`} className="marquee-text marquee-text-fill">
+                  {word}
+                </span>
+              ))}
+            </div>
+            <div className="flex" aria-hidden="true">
+              {backdropWords.map((word, i) => (
+                <span key={`r2-b-${i}`} className="marquee-text marquee-text-fill">
+                  {word}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
-        {/* Row 3 — scrolls left */}
+
+        {/* Row 3 — scrolls left (stroke) */}
         <div className="marquee-row">
           <div className="marquee-track marquee-left">
-            <span className="text-[8vw] font-black font-mono tracking-tighter text-text whitespace-nowrap px-6">
-              PORTOFOLIO
-            </span>
-            <span className="text-[8vw] font-black font-mono tracking-tighter text-text whitespace-nowrap px-6" aria-hidden="true">
-              PORTOFOLIO
-            </span>
-            <span className="text-[8vw] font-black font-mono tracking-tighter text-text whitespace-nowrap px-6" aria-hidden="true">
-              PORTOFOLIO
-            </span>
+            <div className="flex">
+              {backdropWords.map((word, i) => (
+                <span key={`r3-a-${i}`} className="marquee-text marquee-text-stroke">
+                  {word}
+                </span>
+              ))}
+            </div>
+            <div className="flex" aria-hidden="true">
+              {backdropWords.map((word, i) => (
+                <span key={`r3-b-${i}`} className="marquee-text marquee-text-stroke">
+                  {word}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
-        {/* Row 4 — scrolls right */}
+
+        {/* Row 4 — scrolls right (fill) */}
         <div className="marquee-row">
           <div className="marquee-track marquee-right">
-            <span className="text-[8vw] font-black font-mono tracking-tighter text-text whitespace-nowrap px-6">
-              PORTOFOLIO
-            </span>
-            <span className="text-[8vw] font-black font-mono tracking-tighter text-text whitespace-nowrap px-6" aria-hidden="true">
-              PORTOFOLIO
-            </span>
-            <span className="text-[8vw] font-black font-mono tracking-tighter text-text whitespace-nowrap px-6" aria-hidden="true">
-              PORTOFOLIO
-            </span>
+            <div className="flex">
+              {backdropWords.map((word, i) => (
+                <span key={`r4-a-${i}`} className="marquee-text marquee-text-fill">
+                  {word}
+                </span>
+              ))}
+            </div>
+            <div className="flex" aria-hidden="true">
+              {backdropWords.map((word, i) => (
+                <span key={`r4-b-${i}`} className="marquee-text marquee-text-fill">
+                  {word}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
       </div>
